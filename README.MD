@@ -11,3 +11,8 @@ The Main class looks up Movie bean via three ways to print out actor information
 1. Using XmlBeanFactory
 2. Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader
 3. Using ApplicationContext
+
+
+
+this is task one question which i am goig to change 
+might be change will give neccessary result.
