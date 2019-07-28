@@ -6,9 +6,18 @@ public class Movie {
     public Actor getActor() {
         return actor;
     }
-
+//use setter injection in task1
     public void setActor(Actor actor)
     {
         this.actor = actor;
     }
+    public Movie()
+    {
+        super();
+    }
+    //use constructor-injection in task2
+   public Movie(Actor actor)
+   {
+       this.actor=actor;
+   }
 }
