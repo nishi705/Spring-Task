@@ -6,9 +6,8 @@
 
 
     <bean id="movie" class="com.stackroute.domain.Movie">
-        <constructor-arg index="0" ref="actor"></constructor-arg>
 
-
+       <property  name="actor" ref="actor"></property>
     </bean>
 
 
@@ -16,7 +15,12 @@
         <property name="age" value="22"></property>
         <property name="gender" value="Female"></property>
         <property name="name" value="nishi"></property>
-
-
     </bean>
+
+
+
+
+
+
+
 </beans>
