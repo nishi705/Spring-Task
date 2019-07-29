@@ -23,14 +23,14 @@ public class App
 
     {
 
-        AbstractApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
         //task-1
          Movie movie=(Movie)context.getBean("movie");
       System.out.println(movie.getActor());
         //task-2
-       Movie movie1=(Movie)context.getBean("movie");
-       System.out.println(movie1.getActor());
-      System.out.println(movie=movie1);
+       Movie movieA=(Movie)context.getBean("movie1");
+       System.out.println(movieA.getActor());
+      System.out.println(movie=movieA);
       //  BeanLifecycleDemoBean beanLifecycleDemoBean = context.getBean("BeanLifecycle", BeanLifecycleDemoBean.class);
         //System.out.println(beanLifecycleDemoBean);
 
