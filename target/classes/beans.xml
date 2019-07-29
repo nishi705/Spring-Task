@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">    <!-- bean definitions here -->
-    <bean id="movie" class="com.stackroute.domain.Movie">
+    <bean id="movie" autowire="byName" class="com.stackroute.domain.Movie">
         <property name="actor" ref="actor"></property>
     </bean>
 
@@ -15,7 +15,7 @@
     </bean>
     <!--bean for constructor-injection-->
 
-    <bean id="movie1" class="com.stackroute.domain.Movie">
+    <bean id="movie1" autowire="constructor" class="com.stackroute.domain.Movie">
         <constructor-arg ref="actor1"/>
     </bean>
 
